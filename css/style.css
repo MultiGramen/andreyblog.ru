@@ -1,0 +1,95 @@
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.wrapper {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas:
+    "header header header"
+    "content content sidebar"
+    "footer footer footer";
+}
+.header {
+    grid-area: header;
+
+    display: grid;  
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    background-color: #00fffc;
+    align-items: center;
+}
+.content {
+    grid-area: content;
+}
+.post {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.post_1 {
+    display: grid;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.post_2 {
+    display: grid;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.login {
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 5px solid black;
+    border-radius: 30px;
+    display: grid;
+    grid-template-rows: minmax(50px, auto);
+    justify-content: center;
+    align-items: center;
+}
+.sections {
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 5px solid black;
+    border-radius: 30px;
+    display: grid;
+    justify-content: center;
+    height: 100%;
+}
+
+.footer {
+    grid-area: footer;
+
+    display: grid;  
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    background-color: blueviolet;
+}
+
+.multigramen_site > a > img {
+    height: 70px;
+    padding-left: 10px;
+}
+.copyright {
+    display: grid;
+    justify-content: center;
+}
+
+.social-icons {
+    width: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.social-icons > li {
+    display: inline-block;
+}
