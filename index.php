@@ -34,37 +34,36 @@
                         $post_date;
                         $post_section;
                     ?>
-                    <p>Название поста</p>
-                    <p>
+                    <p class="post_name">
+                        <strong>Название поста</strong>
+                    </p>
+                    <p class="post_img">
                         <img src="/img/tyPweNXXn2M.png" alt="">
                     </p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem rerum placeat amet quia consectetur, deserunt harum numquam obcaecati culpa quae sint fugiat, dolorum, similique unde? Maiores porro molestias est in.
+                    <p class="post_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem rerum placeat amet quia consectetur, deserunt harum numquam obcaecati culpa quae sint fugiat, dolorum, similique unde? Maiores porro molestias est in.
                     Culpa libero sint eligendi quidem nihil. Autem temporibus, in corporis cupiditate sit ipsam iusto asperiores minus consequuntur at, voluptas sequi sapiente obcaecati sed laudantium enim laborum quam, deserunt nam velit.
                     Officiis dolores vitae rerum numquam! Architecto velit maiores eos. Nihil unde quas, pariatur reprehenderit cumque eligendi eos dolores adipisci dolore, eum ducimus, temporibus recusandae illo ullam distinctio esse nostrum aperiam.
                     Ex odio neque, vero saepe quas voluptatem corrupti dolor illum velit magni, suscipit aut sapiente architecto mollitia. Reprehenderit vitae laboriosam, quisquam explicabo dolores exercitationem. Repellendus nostrum mollitia inventore culpa eos.
-                    Ipsa laboriosam, quod vel expedita laudantium in ipsum, eligendi deserunt dolores id aut odio consectetur iusto eos doloribus mollitia quos qui quidem blanditiis, cumque non eaque inventore.</p>
-                    <p>Читать далее</p>
-                    <p>Дата публикации поста</p>
-                    <p>Рубрика</p>
+                    Ipsa laboriosam, quod vel expedita laudantium in ipsum, eligendi deserunt dolores id aut odio consectetur iusto eos doloribus mollitia quos qui quidem blanditiis, cumque non eaque inventore. Consequuntur, ab ipsum!</p>
+                    <p class="post_see_more">Читать далее</p>
+                    <p class="post_date">Дата публикации поста</p>
+                    <p class="post_section">Рубрика</p>
                 </div>
                 <div class="post_2">
-                    <p>Название поста</p>
-                    <p>
+                    <p class="post_name">
+                        <strong>Название поста</strong>
+                    </p>
+                    <p class="post_img">
                         <img src="/img/tyPweNXXn2M.png" alt="">
                     </p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem rerum placeat amet quia consectetur, deserunt harum numquam obcaecati culpa quae sint fugiat, dolorum, similique unde? Maiores porro molestias est in.
+                    <p class="post_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem rerum placeat amet quia consectetur, deserunt harum numquam obcaecati culpa quae sint fugiat, dolorum, similique unde? Maiores porro molestias est in.
                     Culpa libero sint eligendi quidem nihil. Autem temporibus, in corporis cupiditate sit ipsam iusto asperiores minus consequuntur at, voluptas sequi sapiente obcaecati sed laudantium enim laborum quam, deserunt nam velit.
                     Officiis dolores vitae rerum numquam! Architecto velit maiores eos. Nihil unde quas, pariatur reprehenderit cumque eligendi eos dolores adipisci dolore, eum ducimus, temporibus recusandae illo ullam distinctio esse nostrum aperiam.
                     Ex odio neque, vero saepe quas voluptatem corrupti dolor illum velit magni, suscipit aut sapiente architecto mollitia. Reprehenderit vitae laboriosam, quisquam explicabo dolores exercitationem. Repellendus nostrum mollitia inventore culpa eos.
-                    Ipsa laboriosam, quod vel expedita laudantium in ipsum, eligendi deserunt dolores id aut odio consectetur iusto eos doloribus mollitia quos qui quidem blanditiis, cumque non eaque inventore. Consequuntur, ab ipsum!
-                    Sit et inventore tempora explicabo assumenda. Expedita aut ea explicabo suscipit odit ducimus saepe vitae! Aut cumque expedita minus quas libero repellendus ea excepturi atque, quo sapiente dicta maiores ullam.
-                    Illo quia rem dolore doloribus hic iste iure assumenda quod officiis reiciendis mollitia odit ea vel atque, quisquam eos eveniet necessitatibus, ipsa fuga aspernatur libero architecto nulla. Est, facere assumenda?
-                    Aliquam at voluptate ab animi necessitatibus expedita quasi dicta ad obcaecati reiciendis labore ducimus, recusandae consequuntur. Eum, perspiciatis temporibus sapiente cupiditate molestias voluptatum ad numquam sint iusto consequatur ipsam quod.
-                    Nulla eum corrupti rem ipsum reiciendis nihil ipsa, ut, libero commodi consectetur odio molestias perferendis repellendus voluptas iusto itaque soluta praesentium ab quaerat. Possimus, magni velit voluptate corporis repudiandae quia.
-                    Obcaecati facere harum laborum fuga. Alias porro quia odio eos possimus incidunt consectetur magni atque eius. Ipsam ipsa cum illum incidunt eaque nostrum repudiandae repellat cumque officiis, enim culpa saepe.</p>
-                    <p>Читать далее</p>
-                    <p>Дата публикации поста</p>
-                    <p>Рубрика</p>
+                    Ipsa laboriosam, quod vel expedita laudantium in ipsum, eligendi deserunt dolores id aut odio consectetur iusto eos doloribus mollitia quos qui quidem blanditiis, cumque non eaque inventore. Consequuntur, ab ipsum!</p>
+                    <p class="post_see_more">Читать далее</p>
+                    <p class="post_date">Дата публикации поста</p>
+                    <p class="post_section">Рубрика</p>
                 </div>
             </div>
         </div>
@@ -95,20 +94,21 @@
                 </p>
             </div>
             <ul class="social-icons">
-            <li>
-                <a class="icon_img" href="">
-                    <picture>
-                        <img src="img/vk.png" alt="ВКонтакте" width="70px">
-                    </picture>
-                </a>
-            </li>
-            <li>
-                <a class="icon_img" href="">
-                    <picture>
-                        <img src="img/github.png" alt="GitHub" width="70px">
-                    </picture>
-                </a>
-            </li>
+                <li>
+                    <a class="icon_img" href="">
+                        <picture>
+                            <img src="img/vk.png" alt="ВКонтакте" width="70px">
+                        </picture>
+                    </a>
+                </li>
+                <li>
+                    <a class="icon_img" href="">
+                        <picture>
+                            <img src="img/github.png" alt="GitHub" width="70px">
+                        </picture>
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </body>

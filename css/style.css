@@ -26,18 +26,50 @@ html, body {
 .content {
     grid-area: content;
 }
+
 .post {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     
 }
 .post_1 {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
     margin-left: 10px;
     margin-right: 10px;
 }
 .post_2 {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.post_name {
+    display: grid;
+    grid-column: 1 / end;
+    justify-items: center;
+}
+.post_img {
+    display: grid;
+    grid-column: 1 / end;
+    justify-items: center;
+}
+.post_text {
+    display: grid;
+    grid-column: 1 / end;
+}
+.post_see_more {
+    display: grid;
+    justify-items: center;
+}
+.post_date {
+    display: grid;
+    justify-items: center;
+}
+.post_section {
+    display: grid;
+    justify-items: center;
 }
 
 .sidebar {
