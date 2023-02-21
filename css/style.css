@@ -3,6 +3,8 @@ html, body {
     padding: 0;
     margin: 0;
     border: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 17px;
 }
 .wrapper {
     height: 100%;
@@ -30,7 +32,6 @@ html, body {
 .post {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    
 }
 .post_1 {
     display: grid;
@@ -71,6 +72,18 @@ html, body {
     display: grid;
     justify-items: center;
 }
+.see_more {
+    display: grid;
+    justify-items: center;
+    
+}
+.see_more > p {
+    padding-top: 5px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    border: 2px solid black;
+}
 
 .sidebar {
     grid-area: sidebar;
@@ -89,14 +102,25 @@ html, body {
     justify-content: center;
     align-items: center;
 }
-.sections {
+
+.sections_main {
     margin-left: 5px;
     margin-right: 5px;
     border: 5px solid black;
     border-radius: 30px;
+}
+.sections {
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 5px solid black;
     display: grid;
     justify-content: center;
     height: 100%;
+}
+.sections_text {
+    display: grid;
+    justify-items: center;
 }
 
 .footer {

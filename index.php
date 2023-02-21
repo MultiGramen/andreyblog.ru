@@ -1,12 +1,18 @@
+<?php 
+    require_once 'components/connection.php';
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://andreyblog.ru/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://andreyblog.ru:7890/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <title><?php $namepage; ?></title>
+    <title>
+    <?php 
+    $namepage = 'Андрей Пчелкин';
+    echo $namepage; ?></title>
 </head>
 <body>
     <div class="wrapper">
@@ -15,13 +21,22 @@
                         $blog; 
                         $about_me; 
                         $search;
+                        $result = $pdo->query('SELECT * FROM `menu` LIMIT 2');
+                        while($row = $result->fetch(PDO::FETCH_ASSOC)) {
+                            echo $row['name'];
+                        }
                     ?>
-                    Блог Обо мне
                 <div class="menu">
                     <img src="img/logo.png" alt="logo" height="100em;">
                 </div>
-                <?php $user; ?>
-                Поиск Гость
+                <?php 
+                    $user;
+
+                    $result = $pdo->query('SELECT * FROM `menu` LIMIT 2, 2');
+                    while($row = $result->fetch(PDO::FETCH_ASSOC)) {
+                        echo $row['name'];
+                    }
+                ?>
         </div>
         <div class="content">
             <div class="post">
@@ -38,7 +53,7 @@
                         <strong>Название поста</strong>
                     </p>
                     <p class="post_img">
-                        <img src="/img/tyPweNXXn2M.png" alt="">
+                        <img src="/img/tyPweNXXn2M.png" alt="" width="300px">
                     </p>
                     <p class="post_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem rerum placeat amet quia consectetur, deserunt harum numquam obcaecati culpa quae sint fugiat, dolorum, similique unde? Maiores porro molestias est in.
                     Culpa libero sint eligendi quidem nihil. Autem temporibus, in corporis cupiditate sit ipsam iusto asperiores minus consequuntur at, voluptas sequi sapiente obcaecati sed laudantium enim laborum quam, deserunt nam velit.
@@ -54,7 +69,7 @@
                         <strong>Название поста</strong>
                     </p>
                     <p class="post_img">
-                        <img src="/img/tyPweNXXn2M.png" alt="">
+                        <img src="/img/tyPweNXXn2M.png" alt="" width="300px">
                     </p>
                     <p class="post_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem rerum placeat amet quia consectetur, deserunt harum numquam obcaecati culpa quae sint fugiat, dolorum, similique unde? Maiores porro molestias est in.
                     Culpa libero sint eligendi quidem nihil. Autem temporibus, in corporis cupiditate sit ipsam iusto asperiores minus consequuntur at, voluptas sequi sapiente obcaecati sed laudantium enim laborum quam, deserunt nam velit.
@@ -66,11 +81,19 @@
                     <p class="post_section">Рубрика</p>
                 </div>
             </div>
+            <div class="see_more">
+                <p>Показать больше</p>
+            </div>
         </div>
         <div class="sidebar">
             <div class="sidebar_chapter">
-                <p class="login">Вход</p>
-                <p class="sections">Рубрики</p>
+                <div class="login_main">
+                    <p class="login">Вход</p>
+                </div>
+                <div class="sections_main">
+                    <h4 class="sections">Рубрики</h4>
+                    <p class="sections_text">Рубрика 1</p>
+                </div>
             </div>
         </div>
         <div class="footer">
@@ -95,14 +118,14 @@
             </div>
             <ul class="social-icons">
                 <li>
-                    <a class="icon_img" href="">
+                    <a class="icon_img" href="https://vk.com/id57045147">
                         <picture>
                             <img src="img/vk.png" alt="ВКонтакте" width="70px">
                         </picture>
                     </a>
                 </li>
                 <li>
-                    <a class="icon_img" href="">
+                    <a class="icon_img" href="https://github.com/MultiGramen">
                         <picture>
                             <img src="img/github.png" alt="GitHub" width="70px">
                         </picture>
