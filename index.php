@@ -26,8 +26,12 @@
                             echo $row['name'];
                         }
                     ?>
-                <div class="menu">
-                    <img src="img/logo.png" alt="logo" height="100em;">
+                <div class="logo">
+                    <a href="https://andreyblog.ru:7890/index.php">
+                        <picture>
+                            <img src="img/logo.png" alt="logo" height="100em;">
+                        </picture>
+                    </a>
                 </div>
                 <?php 
                     $user;
@@ -88,7 +92,9 @@
         <div class="sidebar">
             <div class="sidebar_chapter">
                 <div class="login_main">
-                    <p class="login">Вход</p>
+                <p class="login">
+                    <a href="/authentication/login.php">Вход</a>
+                </p>
                 </div>
                 <div class="sections_main">
                     <h4 class="sections">Рубрики</h4>
