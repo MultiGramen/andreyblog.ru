@@ -1,3 +1,6 @@
+<?php
+    require_once '../components/connection.php';
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -9,38 +12,30 @@
     <title>Главная панель</title>
 </head>
 <body>
-    <div class="wrapper_admin">
-        <div class="header_admin">
-            <div class="logo_admin">
-                <a href="https://andreyblog.ru:7890/index.php">
-                    <picture>
-                        <img src="../img/logo.png" alt="logo" width="170px;">
-                    </picture>
-                </a>
-            </div>
-            <div class="logo_user">
-                <picture>
-                    <img src="../img/IMG_8997.png" alt="" style="width: 6em;">
-                </picture>
-            </div>
-        </div>
+    <div class="wrapper">
+        <?php
+            require_once '../components/header.php';
+        ?>
         <div class="content_admin">
             <!-- Придумать название. Это не sidebaradmin -->
             <div class="sidebar_admin">
-                <div class="posts" id="posts">
+                <div class="menu_admin_button">
                     <p>Записи</p>
                 </div>
-                <div class="headings">
+                <div class="menu_admin_button">
                     <p>Рубрики</p>
                 </div>
-                <div class="recommended">
+                <div class="menu_admin_button">
                     <p>Рекомендации</p>
                 </div>
-                <div class="settings">
+                <div class="menu_admin_button">
                     <p>Настройки</p>
                 </div>
             </div>
         </div>
+        <?php
+            require_once '../components/footer.php';
+        ?>
     </div>
 </body>
 </html>

@@ -13,37 +13,16 @@
 </head>
 <body>
     <div class="wrapper_post">
-        <div class="header">
-                <?php   
-                    $blog; 
-                    $about_me; 
-                    $search;
-                    $result = $pdo->query('SELECT * FROM `menu` LIMIT 2');
-                    while($row = $result->fetch(PDO::FETCH_ASSOC)) {
-                        echo $row['name'];
-                    }
-                ?>
-                <div class="logo">
-                    <a href="https://andreyblog.ru:7890/index.php">
-                        <picture>
-                            <img src="../img/logo.png" alt="logo" height="100em;">
-                        </picture>
-                    </a>
-                </div>
-                <?php 
-                    $user;
-
-                    $result = $pdo->query('SELECT * FROM `menu` LIMIT 2, 2');
-                    while($row = $result->fetch(PDO::FETCH_ASSOC)) {
-                        echo $row['name'];
-                    }
-                ?>
-        </div>
+        <?php
+            require_once '../components/header.php';
+        ?>
         <div class="content">
             <div class="properties">
-                <div class="post_date_a">Дата публикации поста</div>
-                <div class="post_name_a">Название поста</div>
-                <div class="post_section_a">Рубрика</div>
+                <div class="information_post">
+                    <p>Дата публикации поста</p>
+                    <p>Название поста</p>
+                    <p>Рубрика</p>
+                </div>
             </div>
             <div class="post_image">
                 <picture>
@@ -59,7 +38,7 @@
             </div>
             <div class="recommended_posts">
                 <h3 class="title">Рекомендуемые посты</h3>
-                <div class="recommended_posts_a">
+                <div class="recommended_posts_definite">
                     <div class="recommended_posts_1">Пост 1</div>
                     <div class="recommended_posts_2">Пост 2</div>
                     <div class="recommended_posts_3">Пост 3</div>
@@ -76,54 +55,24 @@
                 </div>
                 <form action="#">
                     <p>
-                        <input type="text" placeholder="Ваше имя">
+                        <label for="">
+                            <input class="name" type="text" placeholder="Ваше имя" required oninvalid="this.setCustomValidity('Введите Ваше имя')" oninput="setCustomValidity('')" style="text-align: center; border-radius: 10px;" />
+                        </label>
                     </p>
                     <p>
-                        <input type="text" placeholder="Комментарий">
+                        <label for="">
+                            <input class="comment" type="text" placeholder="Комментарий" required oninvalid="this.setCustomValidity('Заполните это поле')" oninput="setCustomValidity('')" style="width: 500px; height: 150px; border-radius: 20px;" />
+                        </label>
                     </p>
                     <p>
-                        <input type="submit" value="Добавить комментарий">
+                        <input type="submit" value="Добавить комментарий" />
                     </p>
                 </form>
             </div>
         </div>
-        <div class="footer">
-            <div class="multigramen_site">
-                <a href="https://multigramen.ru/index.php">
-                    <img src="../img/IMG_8997.png" alt="Андрей Пчелкин">
-                </a>
-            </div>
-            <div class="copyright">
-                <p>
-                    <?php
-                    if (date("Y") == 2023) {
-                        echo '© А. Н. Пчелкин,';
-                        echo " 2023";
-                    } else {
-                        echo '© Пчелкин А. Н., ';
-                        echo " 2023-";
-                        echo date("Y");
-                    }
-                    ?>
-                </p>
-            </div>
-            <ul class="social-icons">
-                <li>
-                    <a class="icon_img" href="https://vk.com/id57045147">
-                        <picture>
-                            <img src="../img/vk.png" alt="ВКонтакте" width="70px">
-                        </picture>
-                    </a>
-                </li>
-                <li>
-                    <a class="icon_img" href="https://github.com/MultiGramen">
-                        <picture>
-                            <img src="../img/github.png" alt="GitHub" width="70px">
-                        </picture>
-                    </a>
-                </li>
-            </ul>
-        </div>
+        <?php
+            require_once '../components/footer.php';
+        ?>
     </div>
 </body>
 </html>

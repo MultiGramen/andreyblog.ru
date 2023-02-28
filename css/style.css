@@ -3,51 +3,47 @@ html, body {
     padding: 0;
     margin: 0;
     border: 0;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
 }
 .wrapper {
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 100px 1fr 100px;
     grid-template-areas:
     "header header header"
     "content content sidebar"
     "footer footer footer";
 }
-.header {
+#header {
     grid-area: header;
 
     display: grid;  
     grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
     background-color: #00fffc;
     align-items: center;
+    padding: 0 10px 0 10px;
 }
-.logo {
-    display: grid;
-    justify-content: center;
-    grid-template-areas: ". header .";
+.menu {
+    text-align: center;
 }
-
+.input_search {
+    width: 30em;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
 .content {
     grid-area: content;
 }
-
-.post {
+#posts {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.post_1 {
+.post_id {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-.post_2 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
 .post_name {
     display: grid;
     grid-column: 1 / end;
@@ -55,50 +51,36 @@ html, body {
 }
 .post_img {
     display: grid;
-    grid-column: 1 / end;
-    justify-items: center;
+    grid-column: 2;
 }
 .post_text {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 10px;
     display: grid;
     grid-column: 1 / end;
 }
-.post_see_more {
-    display: grid;
-    justify-items: center;
-}
-.post_date {
-    display: grid;
-    justify-items: center;
-}
-.post_section {
+.post_information_center {
     display: grid;
     justify-items: center;
 }
 .see_more {
     display: grid;
     justify-items: center;
-    
 }
 .see_more > p {
-    padding-top: 5px;
-    padding-right: 30px;
-    padding-bottom: 5px;
-    padding-left: 30px;
+    padding: 5px 30px 5px 30px;
     border: 2px solid black;
 }
-
-.sidebar {
+#sidebar {
     grid-area: sidebar;
     
     display: grid;
     grid-template-rows: auto 1fr;
 }
-
+.sidebar_chapter {
+    width: 250px;
+}
 .login {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 17px 5px 17px 5px;
     border: 5px solid black;
     border-radius: 30px;
     display: grid;
@@ -106,28 +88,23 @@ html, body {
     justify-content: center;
     align-items: center;
 }
-
 .sections_main {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 0 5px 0 5px;
     border: 5px solid black;
     border-radius: 30px;
 }
 .sections {
     margin: 0px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 0 5px 0;
     border-bottom: 5px solid black;
-    display: grid;
-    justify-content: center;
+    text-align: center;
     height: 100%;
 }
 .sections_text {
     display: grid;
     justify-items: center;
 }
-
-.footer {
+#footer {
     grid-area: footer;
 
     display: grid;  
@@ -135,20 +112,17 @@ html, body {
     align-items: center;
     background-color: blueviolet;
 }
-
-.multigramen_site > a > img {
+.author > a > img {
     height: 70px;
-    padding-left: 10px;
+    padding: 8px;
 }
 .copyright {
     display: grid;
     justify-content: center;
 }
-
 .social-icons {
     width: 200px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 0 50px 0 50px;
 }
 .social-icons > li {
     display: inline-block;
@@ -169,6 +143,13 @@ html, body {
     display: grid;
     justify-content: center;
 }
+.authentication_form_label {
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 200px;
+    height: 20px;
+    text-align: center;
+}
 
 /* Admin panel */
 .wrapper_admin {
@@ -177,25 +158,17 @@ html, body {
     grid-template-columns: 1fr;
     grid-template-rows: 100px 1fr;
 }
-
-.header_admin {
+.user {
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
-    background-color: #00fffc;
-    align-items: center;
+    grid-column-end: 5;
 }
-.logo_admin{
-    display: grid;
-    grid-column-start: 1;
-}
-
 .logo_user {
     display: grid;
-    grid-column-end: 4;
+    grid-template-columns: 0.8fr 1fr;
+    align-items: center;
 }
 .content_admin {
     display: grid;
-    grid-template-columns: 0.3fr 1fr;
 }
 .sidebar_admin {
     display: grid;
@@ -207,23 +180,10 @@ html, body {
     display: grid;
     justify-content: center;
 }
-.posts {
+.menu_admin_button {
     border: 4px solid black;
     border-radius: 15px;
 }
-.headings {
-    border: 4px solid black;
-    border-radius: 15px;
-}
-.recommended {
-    border: 4px solid black;
-    border-radius: 15px;
-}
-.settings {
-    border: 4px solid black;
-    border-radius: 15px;
-}
-
 
 /* post */
 .wrapper_post {
@@ -237,23 +197,40 @@ html, body {
     "footer footer footer";
 }
 .properties {
+    align-items: center;
+    background-color: #ababab;
+}
+.information_post {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    background-color: #ababab;
 }
-
+.information_post > p {
+    font-weight: bold;
+}
 .post_image {
     display: grid;
     justify-items: center;
+    margin: 10px 0 10px 0;
 }
-
-.recommended_posts > h3 {
+.recommended_posts {
     display: grid;
-    justify-items: center;
+    grid-template-rows: repeat(2, 3fr);
+    margin: 0 10px 0 10px;
+    border: 5px solid black;
+    border-radius: 20px;
 }
-.recommended_posts_a {
+.recommended_posts > h3 {
+    text-align: center;
+}
+.recommended_posts_definite {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
+    align-items: center;
+    border-top: 5px solid black;
+}
+.comments {
+    display: grid;
+    justify-content: center;
 }
