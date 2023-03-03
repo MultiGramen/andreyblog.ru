@@ -1,7 +1,7 @@
 <div id="sidebar">
     <div class="sidebar_chapter">
         <div class="login_main">
-        <p class="login">
+        <p class="page_login">
             <a href="/authentication/login.php">Вход</a>
         </p>
         </div>

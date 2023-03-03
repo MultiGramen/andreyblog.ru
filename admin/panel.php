@@ -16,21 +16,23 @@
         <?php
             require_once '../components/header.php';
         ?>
-        <div class="content_admin">
-            <!-- Придумать название. Это не sidebaradmin -->
-            <div class="sidebar_admin">
-                <div class="menu_admin_button">
-                    <p>Записи</p>
-                </div>
-                <div class="menu_admin_button">
-                    <p>Рубрики</p>
-                </div>
-                <div class="menu_admin_button">
-                    <p>Рекомендации</p>
-                </div>
-                <div class="menu_admin_button">
-                    <p>Настройки</p>
-                </div>
+        <div id="sidebar_admin">
+            <div class="menu_admin_button">
+                <p>Записи</p>
+            </div>
+            <div class="menu_admin_button">
+                <p>Рубрики</p>
+            </div>
+            <div class="menu_admin_button">
+                <p>Рекомендации</p>
+            </div>
+            <div class="menu_admin_button">
+                <p>Настройки</p>
+            </div>
+        </div>
+        <div id="content">
+            <div class="content_admin">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eaque fugit laboriosam, odio fugiat error nostrum possimus corporis blanditiis, nulla in modi quaerat doloribus dolor, maiores recusandae fuga laudantium commodi.</p>
             </div>
         </div>
         <?php

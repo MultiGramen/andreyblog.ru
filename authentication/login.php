@@ -12,11 +12,11 @@
     <title>Вход</title>
 </head>
 <body>
-<div class="wrapper_login">
+<div class="wrapper">
     <?php 
         require_once '../components/header.php';
     ?>
-    <div class="content" style="display: grid; align-items: center;">
+    <div id="content" style="display: grid; align-items: center;">
         <div class="authentication">
             <div class="authentication_form">
                 <form action="#">
@@ -31,8 +31,8 @@
                         </label>
                     </p>
                     <p>
-                        <label for="" style="padding-left: 80px;">
-                            <input type="submit" value="Вход">
+                        <label for="">
+                            <input type="submit" value="Войти">
                         </label>
                     </p>
                 </form>

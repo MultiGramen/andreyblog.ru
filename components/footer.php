@@ -1,7 +1,7 @@
-<div id="footer">
+<footer>
     <div class="author">
         <a href="https://multigramen.ru/index.php">
-            <img src="img/IMG_8997.png" alt="Андрей Пчелкин">
+            <img src="/img/IMG_8997.png" alt="Андрей Пчелкин">
         </a>
     </div>
     <div class="copyright">
@@ -22,16 +22,16 @@
         <li>
             <a class="icon_img" href="https://vk.com/id57045147">
                 <picture>
-                    <img src="img/vk.png" alt="ВКонтакте" width="70px">
+                    <img src="/img/vk.png" alt="ВКонтакте" width="70px">
                 </picture>
             </a>
         </li>
         <li>
             <a class="icon_img" href="https://github.com/MultiGramen">
                 <picture>
-                    <img src="img/github.png" alt="GitHub" width="70px">
+                    <img src="/img/github.png" alt="GitHub" width="70px">
                 </picture>
             </a>
         </li>
     </ul>
-</div>
+</footer>

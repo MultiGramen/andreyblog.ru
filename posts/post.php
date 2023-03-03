@@ -12,11 +12,11 @@
     <title>Имя поста</title>
 </head>
 <body>
-    <div class="wrapper_post">
+    <div class="wrapper">
         <?php
             require_once '../components/header.php';
         ?>
-        <div class="content">
+        <div id="content">
             <div class="properties">
                 <div class="information_post">
                     <p>Дата публикации поста</p>
@@ -36,12 +36,18 @@
                 A minus tempora rem animi vitae deleniti sit placeat doloribus debitis voluptas corporis at quasi porro minima voluptatibus accusamus temporibus id ipsa quae, inventore, aliquid provident quas voluptatem doloremque! Dicta.
                 Sunt, ipsa error quia quibusdam quasi culpa praesentium natus illum mollitia asperiores minima exercitationem necessitatibus, harum neque deserunt labore ex fugit totam consectetur laborum doloribus quis. Odit error fugiat vero.</p>    
             </div>
-            <div class="recommended_posts">
+            <div class="block_recommended">
                 <h3 class="title">Рекомендуемые посты</h3>
-                <div class="recommended_posts_definite">
-                    <div class="recommended_posts_1">Пост 1</div>
-                    <div class="recommended_posts_2">Пост 2</div>
-                    <div class="recommended_posts_3">Пост 3</div>
+                <div class="recommended_posts">
+                    <div class="recommended_post">
+                        <img src="/img/tyPweNXXn2M.png" alt="Картинка рекомендуемого поста">
+                    </div>
+                    <div class="recommended_post">
+                        <img src="/img/tyPweNXXn2M.png" alt="Картинка рекомендуемого поста">
+                    </div>
+                    <div class="recommended_post">
+                        <img src="/img/tyPweNXXn2M.png" alt="Картинка рекомендуемого поста">
+                    </div>
                 </div>
             </div>
             <div class="comments">
@@ -53,21 +59,19 @@
                         <p>Комментарий</p>
                     </div>
                 </div>
-                <form action="#">
-                    <p>
+                <div class="new_comments">
+                    <form class="new_comment_text" action="#">
                         <label for="">
-                            <input class="name" type="text" placeholder="Ваше имя" required oninvalid="this.setCustomValidity('Введите Ваше имя')" oninput="setCustomValidity('')" style="text-align: center; border-radius: 10px;" />
+                            <input class="comment_name" type="text" placeholder="Ваше имя" required oninvalid="this.setCustomValidity('Введите Ваше имя')" oninput="setCustomValidity('')" style="text-align: center; border-radius: 10px;" />
                         </label>
-                    </p>
-                    <p>
                         <label for="">
-                            <input class="comment" type="text" placeholder="Комментарий" required oninvalid="this.setCustomValidity('Заполните это поле')" oninput="setCustomValidity('')" style="width: 500px; height: 150px; border-radius: 20px;" />
+                            <input class="comment_text" type="text" placeholder="Комментарий" required oninvalid="this.setCustomValidity('Заполните это поле')" oninput="setCustomValidity('')" style="width: 500px; height: 150px; border-radius: 20px;" />
                         </label>
-                    </p>
-                    <p>
-                        <input type="submit" value="Добавить комментарий" />
-                    </p>
-                </form>
+                        <label for="">
+                            <input class="comment_button" type="submit" value="Добавить комментарий" />
+                        </label>
+                    </form>
+                </div>
             </div>
         </div>
         <?php

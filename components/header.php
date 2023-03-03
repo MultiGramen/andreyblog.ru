@@ -1,8 +1,8 @@
-<div id="header">
+<header>
     <div class="logo">
         <a href="https://andreyblog.ru:7890/index.php">
             <picture>
-                <img src="img/logo.png" alt="logo" height="100em;">
+                <img src="/img/logo.png" alt="logo" height="100em;">
             </picture>
         </a>
     </div>
@@ -24,11 +24,9 @@
             </form>
         </div>
     <div class="user">
-        <div class="logo_user">
-            <picture class="photo_user">
-                <img src="img/IMG_8997.png" alt="" style="width: 5em;">
-            </picture>
-            <p>Андрей Пчелкин</p>
-        </div>
+        <picture class="photo_user">
+            <img src="/img/IMG_8997.png" alt="" style="width: 5em;">
+        </picture>
+        <p class="username">Андрей Пчелкин</p>
     </div>
-</div>
+</header>
