@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://andreyblog.ru:7890/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Имя поста</title>
 </head>
 <body>
@@ -26,7 +26,7 @@
             </div>
             <div class="post_image">
                 <picture>
-                    <img src="../img/tyPweNXXn2M.png" alt="">
+                    <img src="/img/tyPweNXXn2M.png" alt="">
                 </picture>
             </div>
             <div class="post_text">
@@ -40,13 +40,34 @@
                 <h3 class="title">Рекомендуемые посты</h3>
                 <div class="recommended_posts">
                     <div class="recommended_post">
-                        <img src="/img/tyPweNXXn2M.png" alt="Картинка рекомендуемого поста">
+                        <div class="recommended_post_1">
+                            <div class="recommended_post_img">
+                                <img src="/img/tyPweNXXn2M.png" alt="Картинка рекомендуемого поста">
+                            </div>
+                            <div class="recommended_post_text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus modi quidem maiores nulla sequi, dicta beatae. Maxime illo, delectus, excepturi quas doloribus cumque omnis nostrum molestiae, animi architecto unde debitis.</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="recommended_post">
-                        <img src="/img/tyPweNXXn2M.png" alt="Картинка рекомендуемого поста">
+                        <div class="recommended_post_1">
+                            <div class="recommended_post_img">
+                                <img src="/img/tyPweNXXn2M.png" alt="Картинка рекомендуемого поста">
+                            </div>
+                            <div class="recommended_post_text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus modi quidem maiores nulla sequi, dicta beatae. Maxime illo, delectus, excepturi quas doloribus cumque omnis nostrum molestiae, animi architecto unde debitis.</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="recommended_post">
-                        <img src="/img/tyPweNXXn2M.png" alt="Картинка рекомендуемого поста">
+                        <div class="recommended_post_1">
+                            <div class="recommended_post_img">
+                                <img src="/img/tyPweNXXn2M.png" alt="Картинка рекомендуемого поста">
+                            </div>
+                            <div class="recommended_post_text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus modi quidem maiores nulla sequi, dicta beatae. Maxime illo, delectus, excepturi quas doloribus cumque omnis nostrum molestiae, animi architecto unde debitis.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
